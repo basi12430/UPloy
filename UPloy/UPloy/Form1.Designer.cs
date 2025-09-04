@@ -7,6 +7,8 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        private TabControl navigationTabs;
+
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>
@@ -29,9 +31,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.navigationTabs = new TabControl();
+            this.SuspendLayout();
+            // 
+            // navigationTabs
+            // 
+            this.navigationTabs.Alignment = TabAlignment.Left;
+            this.navigationTabs.Dock = DockStyle.Fill;
+            this.navigationTabs.Multiline = true;
+            this.navigationTabs.SizeMode = TabSizeMode.Fixed;
+            this.navigationTabs.ItemSize = new Size(40, 120);
+            // 
+            // Form1
+            // 
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new Size(800, 450);
+            this.Controls.Add(this.navigationTabs);
+            this.Text = "UPloy";
+            this.ResumeLayout(false);
         }
 
         #endregion
